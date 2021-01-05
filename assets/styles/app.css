@@ -1,0 +1,554 @@
+@import url('https://fonts.googleapis.com/css?family=Poppins:200.300.400.500,600,700,800,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans&display=swap');
+*
+{
+margin: 0;
+padding: 0;
+box-sizing: border-box;
+font-family: 'Poppins', sans-serif;
+scroll-behavior: smooth;
+}
+
+@font-face{
+  font-family: "midnightv";
+  src: url('../Fonts/Midnight Valentine.ttf');
+  font-style: normal;
+}
+
+
+.banner 
+{
+  position: flex;
+  width: 100%;
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: url(banner1.jpg);
+  background-size: cover;
+}
+
+.banner .content
+{
+  max-width: 900px;
+  text-align: center;
+}
+
+.banner .content h2
+{
+  font-size: 5em;
+  color: #fff;
+}
+
+.banner .content p
+{
+  font-size: 3ex;
+  color: #fff;
+  font-weight: 300;
+}
+
+.btn
+{
+  font-size: 1em;
+  color: #fff;
+  background: #ff0157;
+  display: inline-block;
+  padding: 10px 30px;
+  margin-top: 20px;
+  text-transform: uppercase;
+  text-decoration: none;
+  letter-spacing: 2px;
+  transition: 0.5s;
+}
+
+.btn:hover
+{
+  letter-spacing: 6px;
+}
+
+header
+{
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  padding: 10px 20px;
+  z-index: 10000;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  transition: 0.5s;
+}
+
+header.sticky
+{
+  background: #fff;
+  padding: 10px 20px;
+  box-shadow: 0 5px 20 px rgba(0,0,0,0.05);
+}
+
+header .dvlogo img
+{
+min-width: 10%;
+width: 10%;  
+max-width: 20%;
+position: fixed;
+transition: 0.5s;
+margin-left: 20%;
+}
+
+header.sticky .dvlogo 
+{
+  display:none;
+}
+
+header .logo
+{
+  font-family: 'midnightv';
+  position: relative;
+  color: #fff;
+  font-weight: 700;
+  font-size: 5em;
+  text-decoration: none;
+  display:none;
+  margin-top: -4%;
+  margin-bottom: -4%;
+  padding-left: 7%;
+}
+
+header.sticky .logo
+{
+  position: relative;
+  font-size: 4em;
+  text-decoration: none;
+  color: #111;
+  display: flex;
+}
+header .logo span
+{
+  font-size: 40px;
+  font-family:'Times New Roman', Times, serif;
+}
+
+header .navigation
+{
+  position: relative;
+  display: flex;
+}
+
+header .navigation li
+{
+  list-style: none;
+  margin-left: 30px;
+}
+
+header .navigation li a
+{
+  text-decoration: none;
+  color: #fff;
+  font-weight: 600;
+}
+
+header.sticky .navigation li a
+{
+  color: #111;
+}
+
+header .navigation li a:hover
+{
+  color: #ff0157
+}
+
+@media (max-width: 991px)
+{
+  header, header.sticky
+  {
+    padding: 10px 20px;
+  }
+  header .navigation
+  {
+    display: none;
+  }
+
+  header .dvlogo{
+    position: static;
+  }
+  header .dvlogo img{
+    min-width: 25%;
+    max-width: 25%;
+  }
+
+  header .navigation.active{
+    width:100%;
+    height: calc(100% - 68px);
+    position: fixed;
+    top: 68px;
+    left: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background: #fff ;
+  }
+
+  header .navigation li {
+    margin-left: 0;
+  }
+
+  header .navigation li a
+  { 
+    color: #111;
+    font-size: 1.6em;
+  }
+
+  .menuToggle
+  {
+    position: relative;
+    width: 80px;
+    height: 40px;
+    background: url("menu.png");
+    background-size: 30px;
+    background-repeat: no-repeat;
+    background-position: center;
+    cursor: pointer;
+  }
+
+  .menuToggle.active
+  {
+    background: url("close.png");
+    background-size: 25px;
+    background-repeat: no-repeat;
+    background-position: center;
+  }
+
+  header.sticky .menuToggle
+  {
+    filter: invert(1);
+  }
+
+  .banner{
+    background-size: static;
+    background-position-x: center;
+  }
+
+  section
+  {
+    padding: 20px;
+  }
+
+  .banner .content h2
+  {
+    font-size: 3em;
+    color: #fff;
+  }
+
+  .banner .content p
+  {
+    font-size: 2ex;
+  }
+
+  .mapcol .small_map
+  {
+    width: auto;
+    display: flex !important;
+  }
+
+  .mapcol .big_map
+  {
+    position: absolute;
+    display: none;
+  }
+
+  .delivery .tableBox {
+    padding-top: 4cm;
+    width: 100% !important;
+    margin-left: 0 !important ;
+    margin-right: 0 !important;
+  } 
+
+  .delivery .tableBox h1{
+    font-size: 2em;
+  }
+
+  .menu table, .delivery table{
+    border-collapse: separate !important;
+    border-spacing: 0 15px ;
+    background-color: rgba(0,0,0,0.5) !important;
+  }
+
+  .menu_container .menu_pizza th span{
+    display: none;
+  }
+
+  .menu_container .menu_pasta, .menu_salad, .menu_drink, .menu_fast, .menu_pizza{
+    width: 100% !important;
+  }
+
+  .menu_fast td:nth-child(2), .menu_fast th:nth-child(2){
+    width: 60%;
+  }
+
+  .contact .row{
+    padding-top: 4cm;
+  }
+}
+
+.menu h2{
+  text-align: center;
+  padding: 10px;
+  font-size: 2em;
+  font-family:Georgia, 'Times New Roman', Times, serif;
+  color: white;
+}
+
+.menu table, th{
+  text-align: center;
+  border: 1px solid black;
+}
+
+tr:hover{
+  background-color: #181717;
+}
+
+.menu table, .delivery table{
+  width: 80%;
+  color: white;
+  background-color: rgba(0,0,0,0.4);
+  margin-left: auto;
+  margin-right: auto;
+  border-collapse: separate;
+  border-spacing: 0 15px ; 
+}
+
+
+th{
+  height: 70px;  
+}
+
+td span{
+  font-weight: 600;
+}
+
+td{
+  font-weight: 400;
+  text-align: left;
+  border: 1px solid black;
+  font-family: 'Cambria, Cochin, Georgia, Times, "Times New Roman", serif';
+  opacity: 90%;
+
+}
+
+td:nth-child(n+3){
+text-align: center;
+}
+
+.menu{
+  background-image: url(woodbg1.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position-x: left;
+  width: 100%;
+}
+
+.menu_container{
+  padding-bottom: 5%;
+}
+
+
+.menu td:nth-child(1){
+  text-align: center;
+  width: 3%;
+  }
+
+.delivery{
+  background-image: url(delivery1.jpg);
+  position: flex;
+  width: 100%;
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-size: cover;
+}
+
+.delivery .tableBox {
+  width: 100%;
+  margin-left: 20%;
+  margin-right: 20%;
+}  
+.delivery .tableBox h1{
+  font-family:'Times New Roman', Times, serif;
+}
+
+.delivery table{
+    border-collapse: collapse;
+}
+
+.tableBox table th:nth-child(1), td:nth-child(1) {
+  width: 10%;
+  text-align: center;
+}
+
+.tableBox th:nth-child(3), td:nth-child(3) {
+  width: 10%;
+  text-align: center;
+}
+
+.tableBox td{
+  height: 50px;
+  border:left
+}
+
+.tableBox h1{
+  font-size: 3em;
+  color: white;
+  text-align: center;
+}
+
+.promotions{
+  background-image: url("promotion.jpg");
+  position: flex;
+  width: 100%;
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-size: cover;
+} 
+
+.promotions p{
+  color:#fff;
+  font-size: 3ex;
+  padding: 8px 0;
+}
+
+.container{
+  text-align: center;
+  width: 60% ;
+}
+
+
+.container h2{
+  padding: 15px 0;
+  font-weight: bold;
+}
+
+.container p{
+  font-family: 'Cambria, Cochin, Georgia, Times, "Times New Roman", serif';
+  line-height: 1cm;
+  opacity: 0.8;
+  padding-bottom: 30px;
+}
+
+.container h1{
+  color: white;
+  font-family: 'Times New Roman', Times, serif;
+  font-size: 11mm;
+  padding: 50px 0px;
+}
+
+.contact{
+  background-image: url("kontakt.jpg");
+  position: flex;
+  width: 100%;
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-size: cover;
+} 
+
+.contact .col-md-6{
+  color: white;
+}
+
+
+.contact .row {
+  width: 70%;
+}
+
+.row h2{
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+#map{
+  height: 100%;
+  width: 100%;
+}
+
+.footer{
+  width:100%;
+  background-image: url("footer-bg.jpg");
+  background-size: cover;
+  position: flex;
+  border-top: #c7a75b solid 1px;
+}
+
+.footer .fot_shader, .copyright{
+
+  background-color: rgba(0,0,0,0.4);
+ 
+}
+
+.footer .row{
+  margin-left: 15%;
+  margin-right: 0;
+}
+ 
+.f_colu p, .s_colu p, .t_colu p{
+  color: white;
+  line-height: 25px;
+  text-align: justify;
+  font-family: 'Times New Roman', Times, serif;
+}
+
+.col-md-4  h3{
+margin-bottom: 1em;
+margin-top: 1em;
+text-align: justify;
+font-family: 'Times New Roman', Times, serif;
+font-size: 25px;
+}
+
+.copyright{
+  width: 100%;
+  display:flex;
+  justify-content: space-between;
+  color: white;
+  padding: 20px 10%;
+  align-items: center;
+  position: relative;
+  border-top: #c7a75b solid 1px;
+}
+
+.copyright .left{
+  text-align: center;
+}
+
+.fa {
+  padding: 20px;
+  font-size: 30px;
+  width: 25%;
+  height: 20%;
+  text-align: center;
+  text-decoration: none;
+  margin-bottom: 5%;
+}
+
+.fa:hover {
+  opacity: 0.7;
+}
+
+.fa-facebook {
+  background: #3B5998;
+  color: white;
+}
+
+.t_colu{
+  text-align: justify;
+}
+
+.mapcol .small_map{
+  display: none;
+}

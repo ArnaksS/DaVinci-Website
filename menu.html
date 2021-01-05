@@ -1,0 +1,462 @@
+<!DOCTYPE html>
+<html lang="pl">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <script src="assets/scripts/script.js" defer></script>
+    <script async defer crossorigin="anonymous" src="https://connect.facebook.net/pl_PL/sdk.js#xfbml=1&version=v9.0" nonce="TepVlTYc"></script>
+    <title>Pizzeria DaVinci Gogolin</title>
+    <link rel="shortcut icon" href="assets/styles/logo.png" type="png">
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+      integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="assets/styles/app.css?V1.0.0" />
+  </head>
+  <body>
+    <header>
+      <div class="dvlogo">
+        <img src="assets/styles/logo.png" />
+      </div>
+      <a href="#" class="logo"><span></span>DaVinci</a>
+      <div class ="menuToggle"></div>
+      <ul class="navigation">
+        <li><a href="index.html">Strona Główna</a></li>
+        <li><a href="menu.html">Menu</a></li>
+        <li><a href="delivery.html">Dostawa</a></li>
+        <li><a href="promotions.html">Promocje</a></li>
+        <li><a href="contact.html">Kontakt</a></li>
+      </ul>
+    </header>
+    <section class="menu" id="menu">
+    <div class= "menu">
+      <div class= "menu_container">
+    <br><br><br><br><br><br><br>
+  <h2>Pizza</h2>
+    <table class = "menu_pizza">
+      <tr>
+        <th>Nr.</th>
+        <th>Nazwa</th>
+        <th><span>Mała</span>  Ø23</th>
+        <th><span>Średnia</span> Ø29</th>
+        <th><span>Duża</span> Ø40</th>
+        <th><span>Familijna</span> Ø45</th>
+      </tr>
+      <tr>
+        <td>1.</td>
+        <td><span>Margharita</span> - ser, sos pomidorowy, oregano</td>
+        <td>10.00 zł</td>
+        <td>14.00 zł</td>
+        <td>20.00 zł</td>
+        <td>25.00 zł</td>
+      </tr>
+      <tr>
+        <td>2.</td>
+        <td><span>Salame</span> - ser, sos pomidorowy, salami, oregano </td>
+        <td>14.00 zł</td>
+        <td>19.00 zł</td>
+        <td>27.00 zł</td>
+        <td>31.00 zł</td>
+      </tr>
+      <tr>
+        <td>3.</td>
+        <td><span>Mexicana</span> - ser, sos pomidorowy, cebula, kiełbasa czosnek, oregano </td>
+        <td>14.00 zł</td>
+        <td>20.00 zł</td>
+        <td>28.00 zł</td>
+        <td>33.00 zł</td>
+      </tr>
+      <tr>
+        <td>4.</td>
+        <td><span>Poloneza</span> - ser, sos pomidorowy, cebula, jajko, boczek, oregano</td>
+        <td>14.00 zł</td>
+        <td>20.00 zł</td>
+        <td>28.00 zł</td>
+        <td>31.00 zł</td>
+      </tr>
+      <tr>
+        <td>5.</td>
+        <td><span>Tropicana</span> - ser, sos pomidorowy, pieczarki, szynka, brzoskwinia, kiwi</td>
+        <td>15.00 zł</td>
+        <td>20.00 zł</td>
+        <td>29.00 zł</td>
+        <td>33.00 zł</td>
+      </tr>
+      <tr>
+        <td>6.</td>
+        <td><span>Capone</span> - ser, sos pomidorowy, pieczarki, cebula, kukurydza, salami, kurczak, przyprawy </td>
+        <td>18.00 zł</td>
+        <td>23.00 zł</td>
+        <td>32.00 zł</td>
+        <td>37.00 zł</td>
+      </tr>
+      <tr>
+        <td>7.</td>
+        <td><span>Wegetariana</span> - ser, sos pomidorowy, cebula, pieczarki, oregano, papryka zielona, kukurydza, pomidory </td>
+        <td>15.50 zł</td>
+        <td>20.00 zł</td>
+        <td>29.00 zł</td>
+        <td>32.00 zł</td>
+      </tr>
+      <tr>
+        <td>8.</td>
+        <td><span>Mona Lisa</span> - ser, sos pomidorowy, gyros, cebula, pomidory, pieczarki, przyprawy orientalne </td>
+        <td>16.00 zł</td>
+        <td>20.00 zł</td>
+        <td>30.00 zł</td>
+        <td>34.00 zł</td>
+      </tr>
+      <tr>
+        <td>9.</td>
+        <td><span>Romantica</span> - ser, sos pomidorowy, pieczarki, tuńczyk, szynka, oiwki, oregano</td>
+        <td>17.50 zł</td>
+        <td>23.00 zł</td>
+        <td>32.00 zł</td>
+        <td>37.00 zł</td>
+      </tr>
+      <tr>
+        <td>10.</td>
+        <td><span>Mediolana</span> - ser, sos pomidorowy, chili, papryka, gyros, pomidor, kurczak, przyprawy orientalne </td>
+        <td>17.00 zł</td>
+        <td>23.00 zł</td>
+        <td>32.00 zł</td>
+        <td>37.00 zł</td>
+      </tr>
+      <tr>
+        <td>11.</td>
+        <td><span>Royal</span> - ser, sos pomidorowy, cebula, pieczarki, oliwki, szynka, kiełbasa, oregano </td>
+        <td>17.50 zł</td>
+        <td>23.00 zł</td>
+        <td>32.00 zł</td>
+        <td>37.00 zł</td>
+      </tr>
+      <tr>
+        <td>12.</td>
+        <td><span>Da Vinci</span> - ser, sos pomidorowy, szybka, salami, pieczarki, papryka, pomidory, cebula, oregano </td>
+        <td>18.00 zł</td>
+        <td>23.00 zł</td>
+        <td>34.00 zł</td>
+        <td>38.00 zł</td>
+      </tr>
+      <tr>
+        <td>13.</td>
+        <td><span>Szefowej</span> - ser, sos pomidorowy, pieczarki, cebula, czosnek, kiełbasa, papryka, gyros, przyprawy orientalne</td>
+        <td>18.00 zł</td>
+        <td>23.00 zł</td>
+        <td>34.00 zł</td>
+        <td>38.00 zł</td>
+      </tr>
+      <tr>
+        <td>14.</td>
+        <td><span>Curry</span> - ser, sos pomidorowy, cebula, pieczarki, kurczak curry, pomidor, jajko, przyprawy orientalne </td>
+        <td>16.00 zł</td>
+        <td>21.00 zł</td>
+        <td>31.00 zł</td>
+        <td>36.00 zł</td>
+      </tr>
+      <tr>
+        <td>15.</td>
+        <td><span>Befino Plus</span> - ser, sos pomidorowy, szynka, pieczarki, groszek zielony, kukurydza </td>
+        <td>16.00 zł</td>
+        <td>21.00 zł</td>
+        <td>30.00 zł</td>
+        <td>35.00 zł</td>
+      </tr>
+      <tr>
+        <td>16.</td>
+        <td><span>Peperoni Plus (lekko ostra)</span> - ser, sos pomidorowy, kiełbasa, pepperoni, papryka, cebula, salami, oregano </td>
+        <td>17.50 zł</td>
+        <td>23.00 zł</td>
+        <td>32.00 zł</td>
+        <td>37.00 zł</td>
+      </tr>
+      <tr>
+        <td>17.</td>
+        <td><span>Kantońska</span> - ser, sos pomidorowy, kurczak, cebula, szynka, chili, pepperoni, przyprawy orientalne </td>
+        <td>17.50 zł</td>
+        <td>22.00 zł</td>
+        <td>31.00 zł</td>
+        <td>36.00 zł</td>
+      </tr>
+      <tr>
+        <td>18.</td>
+        <td><span>Frutti Di Mare</span> - ser, sos pomidorowy, tuńczyk, krewetki, małże, oliwki </td>
+        <td>18.00 zł</td>
+        <td>24.00 zł</td>
+        <td>34.00 zł</td>
+        <td>39.00 zł</td>
+      </tr>
+      <tr>
+        <td>19.</td>
+        <td><span>Hawajska</span> - ser, sos pomidorowy, pieczarki, szynka, ananas </td>
+        <td>15.00 zł</td>
+        <td>20.00 zł</td>
+        <td>29.00 zł</td>
+        <td>33.00 zł</td>
+      </tr>
+      <tr>
+        <td>20.</td>
+        <td><span>Piccante (bardzo ostra)</span> - ser, sos pomidorowy, cebula, papryka, chili, kiełbasa, oregano, pepperoni </td>
+        <td>15.00 zł</td>
+        <td>20.00 zł</td>
+        <td>39.00 zł</td>
+        <td>34.00 zł</td>
+      </tr>
+      <tr>
+        <td>21.</td>
+        <td><span>Marinara</span> - ser, sos pomidorowy, tuńczyk, cebula, jajko, oregano </td>
+        <td>15.00 zł</td>
+        <td>20.00 zł</td>
+        <td>30.00 zł</td>
+        <td>34.00 zł</td>
+      </tr>
+      <tr>
+        <td>22.</td>
+        <td><span>Florencja</span> - ser, sos pomidorowy, pieczarki, papryka, cebula, kukurydza, salami, szynka, gyros </td>
+        <td>18.00 zł</td>
+        <td>25.00 zł</td>
+        <td>35.00 zł</td>
+        <td>39.00 zł</td>
+      </tr>
+      <tr>
+        <td>23.</td>
+        <td><span>Italiana</span> - ser, sos pomidorowy, pieczarki, papryka, gyros, kukurydza, przyprawy </td>
+        <td>16.00 zł</td>
+        <td>20.00 zł</td>
+        <td>30.00 zł</td>
+        <td>34.00 zł</td>
+      </tr>
+      <tr>
+        <td>24.</td>
+        <td><span>Milano</span> - ser, sos pomidorowy, cebula, pieczarki, kiełbasa, boczek, ogórek kiszony </td>
+        <td>18.00 zł</td>
+        <td>23.00 zł</td>
+        <td>34.00 zł</td>
+        <td>38.00 zł</td>
+      </tr>
+      <tr>
+        <td>25.</td>
+        <td><span>Spinaci</span> - ser, sos pomidorowy, pieczarki, szpinak, szynka, czosnek, jajko </td>
+        <td>16.00 zł</td>
+        <td>20.00 zł</td>
+        <td>30.00 zł</td>
+        <td>34.00 zł</td>
+      </tr>
+      <tr>
+        <td>26.</td>
+        <td><span>Broccoli</span> - ser, sos pomidorowy, cebula, pieczarki, szybka, papryka, brokuł, kurczak </td>
+        <td>18.00 zł</td>
+        <td>20.00 zł</td>
+        <td>34.00 zł</td>
+        <td>38.00 zł</td>
+      </tr>
+    </table>
+    <br>
+    <h2>Makarony</h2>
+    <table class = "menu_pasta" style = "width: 50%;" >
+      <tr>
+        <th>Nr.</th>
+        <th>Nazwa</th>
+        <th>Cena</th>
+      </tr>
+      <tr>
+        <td>1.</td>
+        <td><span>Funghi</span> - makaron penne, kawałki kurczaka, pieczarki w sosie czosnkowym z serem</td>
+        <td>20.00 zł</td>
+      </tr>
+      <tr>
+        <td>2.</td>
+        <td><span>Pomodoro</span> - makaron penne w sosie pomidorowym z serem</td>
+        <td>17.00 zł</td>
+      </tr>
+      <tr>
+        <td>3.</td>
+        <td><span>Pomodoro z kurczakiem</span> - makaron penne w sosie pomidorowym z kawałkami kurczaka i serem</td>
+        <td>20.00 zł</td>
+      </tr>
+      <tr>
+        <td>4.</td>
+        <td><span>Bolognese</span> - makaron penne z sosem bolońskim i serem</td>
+        <td>20.00 zł</td>
+      </tr>
+      <tr>
+        <td>5.</td>
+        <td><span>Carbonara</span> - makaron penne w sosie śmietankowym z boczkiem i pieprzem oraz serem</td>
+        <td>20.00 zł</td>
+      </tr>
+      <tr>
+        <td>6.</td>
+        <td><span>Dolce Vita</span> - makaron penne, kawałki kurczaka, szynka, brokuł w sosie czosnkowym z serem</td>
+        <td>22.00 zł</td>
+      </tr>
+      </table>
+      <br>
+      <h2>Sałatki</h2>
+      <table class = "menu_salad" style = "width: 60%;">
+        <tr>
+          <th>Nr.</th>
+          <th>Nazwa</th>
+          <th>Cena</th>
+        </tr>
+        <tr>
+          <td>1.</td>
+          <td><span>Sałatka grecka</span> - sałata lodowa, pomidor, ogórek zielony, papryka, cebula, kukurydza, oliwki, ser feta, sos</td>
+          <td>15.00 zł</td>
+        </tr>
+        <tr>
+          <td>2.</td>
+          <td><span>Sałatka Morska</span> - kapusta pekińska, pomidor, ogórek zielony, papryka, cebula, kukurydza, oliwki, tuńczyk, sos majonezowy</td>
+          <td>16.00 zł</td>
+        </tr>
+        <tr>
+          <td>3.</td>
+          <td><span>Sałatka turecka</span> - sałata lodowa, pomidor, ogórek zielony, papryka, cebula, kukurydza, gyros, sos czosnkowy</td>
+          <td>16.00 zł</td>
+        </tr>
+        <tr>
+          <td>4.</td>
+          <td><span>Sałatka wielowarzywna</span> - sałata lodowa, pomidor, ogórek zielony, papryka, cebula, kukurydza, sos musztardowy</td>
+          <td>12.00 zł</td>
+        </tr>
+      </table>
+      <br>
+      <h2>Szybkie Dania</h2>
+      <table class = "menu_fast" style = "width: 50%;">
+        <tr>
+          <th>Nr.</th>
+          <th>Nazwa</th>
+          <th>Cena</th>
+        </tr>
+        <tr>
+          <td>1.</td>
+          <td><span>Hamburger</span></td>
+          <td>8.00 zł</td>
+        </tr>
+        <tr>
+          <td>2.</td>
+          <td><span>Cheeseburger</span></td>
+          <td>9.00 zł</td>
+        </tr>
+        <tr>
+          <td>3.</td>
+          <td><span>Frytki (200 g)</span></td>
+          <td>5.00 zł</td>
+        </tr>
+        <tr>
+          <td>4.</td>
+          <td><span>Frytki po wiedeńsku</span> - frytki, ser, pieczarki, cebula, kukurydza, sos, ketchup</td>
+          <td>12.00 zł</td>
+        </tr>
+        <tr>
+          <td>5.</td>
+          <td><span>Tzatziki</span></td>
+          <td>4.00 zł</td>
+        </tr>
+        <tr>
+          <td>6.</td>
+          <td><span>Mega kubek</span> - frytki, sałatka, gyros lub kurczakm sos czosnkowy, cebula prażona</td>
+          <td>14.00 zł</td>
+        </tr>
+        <tr>
+          <td>7.</td>
+          <td><span>Zestaw</span> - z gyrosem lub z kurczakiem</td>
+          <td>20.00 zł</td>
+        </tr>
+        <tr>
+          <td>8.</td>
+          <td><span>Frytki po wiedeńsku</span> - z gyrosem lub z kurczakiem</td>
+          <td>16.00 zł</td>
+        </tr>
+      </table>
+      <br>
+      <h2>Napoje</h2>
+      <table class = "menu_drink" style = "width: 50%;">
+        <tr>
+          <th>Nr.</th>
+          <th>Nazwa</th>
+          <th>Cena</th>
+        </tr>
+        <tr>
+          <td>1.</td>
+          <td><span>Piwo beczkowe 0.5l </span> - tyskie </td>
+          <td>5.00 zł</td>
+        </tr>
+        <tr>
+          <td>2.</td>
+          <td><span>Piwo butelkowe</span> </td>
+          <td>5.50 zł</td>
+        </tr>
+        <tr>
+          <td>3.</td>
+          <td><span>Soki 250 ml</span></td>
+          <td>4.00 zł</td>
+        </tr>
+        <tr>
+          <td>4.</td>
+          <td><span>Napoje gazowane 250 ml</span></td>
+          <td>4.00 zł</td>
+        </tr>
+        <tr>
+          <td>5.</td>
+          <td><span>Napoje alkoholowe</span></td>
+          <td>z/w</td>
+        </tr>
+      </table>
+    </div>
+  </div>
+</section>
+<footer class="footer">
+  <div class="fot_shader">
+    <div class="row">
+      <div class="col-md-4">
+        <div class="f_colu">
+          <aside id="wrap_1" class="wrap_1_text">
+            <h3 style="color: #c7a75b">GODZINY OTWARCIA</h3>
+            <p>
+              Środa - zamknięte<br />
+              Od poniedziałku do soboty - 12:00-22:00<br />
+              Niedziela - 13:00-22:00
+            </p>
+          </aside>
+        </div>
+      </div>
+      <div class="col-md-4">
+        <div class="s_colu">
+          <aside id="wrap_2" class="wrap_2_text">
+            <h3 style="color: #c7a75b">KONTAKT</h3>
+            <p>
+              Szkolna 1 <br />
+              47-320 Gogolin<br />
+              pizzeria.davinci.gogolin@gmail.com<br />
+              tel: 77 466 48 40<br />
+              kom: 516 766 981
+            </p>
+          </aside>
+        </div>
+      </div>
+      <div class="col-md-4">
+        <div class="t_colu">
+          <aside id="wrap_3" class="wrap_3_text">
+            <h3 style="color: #c7a75b">POLUB NAS :)</h3>
+            <a href="https://www.facebook.com/Pizzeria-Da-Vinci-503048550066484" class="fa fa-facebook"></a>
+            <div class = "fb_styler" style= "text-align: justify; margin-left: 6%;">
+            <div class="fb-like" data-href="https://www.facebook.com/Pizzeria-Da-Vinci-503048550066484" data-width="" data-layout="button" data-action="like" data-size="small" data-share="false"></div>
+          </div>
+          </aside>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="copyright">
+    <div class="left">
+      Copyright © 2020 Pizzeria DaVinci. Wszelkie prawa zastrzeżone
+    </div>
+    <div class="right">Wykonanie Damian Khalil</div>
+  </div>
+</footer>
+</body>
+</html>
